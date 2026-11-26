@@ -1,0 +1,2 @@
+<!-- Safe inert placeholder. init.lua generates the actual projectile from the local game's POWERDIGGER XML. -->
+<Entity><LifetimeComponent lifetime="1" /></Entity>

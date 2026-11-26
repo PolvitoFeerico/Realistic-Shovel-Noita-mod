@@ -1,0 +1,20 @@
+<Entity name="realistic_shovel_spoil_collector" tags="realistic_shovel_spoil_collector,teleportable_NOT">
+    <MaterialSuckerComponent _enabled="0" material_type="1" barrel_size="81"
+      num_cells_sucked_per_frame="24" randomized_position.min_x="-4" randomized_position.max_x="4"
+      randomized_position.min_y="-4" randomized_position.max_y="4"
+      suck_static_materials="0" suck_gold="0" suck_health="0" suck_tag="[sand_ground]" />
+    <MaterialInventoryComponent drop_as_item="0" on_death_spill="1" do_reactions="0"
+      death_throw_particle_velocity_coeff="1.2">
+      <count_per_material_type></count_per_material_type>
+    </MaterialInventoryComponent>
+    <DamageModelComponent hp="0.5" air_needed="0" materials_damage="0"
+      fire_damage_amount="0" fire_probability_of_ignition="0" blood_material=""
+      ragdoll_material="" ragdoll_filenames_file="" blood_sprite_directional=""
+      blood_sprite_large="" wait_for_kill_flag_on_death="1" ui_report_damage="0"
+      drop_items_on_death="0" />
+    <HitboxComponent aabb_min_x="-2" aabb_max_x="2" aabb_min_y="-2" aabb_max_y="2" />
+    <VariableStorageComponent name="target_x" value_float="0" />
+    <VariableStorageComponent name="target_y" value_float="0" />
+    <VariableStorageComponent name="start_frame" value_int="-1" />
+    <LuaComponent execute_every_n_frame="1" script_source_file="mods/realistic_shovel/files/spoil_release.lua" />
+</Entity>
